@@ -38,7 +38,7 @@ def main(mytimer: func.TimerRequest) -> None:
     refresh_url = "https://api.start.gg/oauth/refresh"
     payload = {
         "grant_type": "refresh_token",
-        "refresh_token": refresh_token,
+        "refresh_token": refresh_token.value,
         "scopes": "user.identity user.email",
         "client_id": client_id,
         "client_secret": client_secret,
